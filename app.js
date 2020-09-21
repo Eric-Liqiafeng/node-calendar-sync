@@ -34,7 +34,7 @@ app.get('/authorize', function(req, res) {
   var authCode = req.query.code;
   if (authCode) {
     console.log('');
-    console.log('Retrieved auth code in /authorize: ' + authCode);
+    console.log('Retrieved auth code in /authorize:  ' + authCode);
     authHelper.getTokenFromCode(authCode, tokenReceived, req, res);
   }
   else {
